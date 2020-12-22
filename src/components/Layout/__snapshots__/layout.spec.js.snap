@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should render snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="columns"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="flexbox"
+      >
+        <div>
+          <div
+            className="card"
+          >
+            Content inside layout components
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

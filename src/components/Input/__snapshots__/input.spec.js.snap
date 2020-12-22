@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should render snapshot 1`] = `
+<input
+  autoComplete="new-password"
+  onChange={[Function]}
+  type="text"
+/>
+`;
