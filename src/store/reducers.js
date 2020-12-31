@@ -1,10 +1,7 @@
 import { SET_SHORT_URL, SET_URL_MAPS, RESET } from "./constants";
 const initialState = {
     urlMaps: [],
-    shortUrl: {
-        shortUrl: null,
-        hash: null
-    }
+    shortUrl: null
 };
 function rootReducer(state = initialState, action) {
     switch (action.type) {

@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import "./input.scss";
 const Input = (props) => {
-    const [value, setValue ] = useState(props.value);
+    const { type, placeholder, style, className, defaultValue, handleOnChange, autoFocus } = props;
+    const [value, setValue ] = useState( defaultValue || "" );
     const onChangeHanlder = (e) => {
         const _value = e.target.value;
         setValue( _value );
-        props.handleOnChange && props.handleOnChange( _value );
+        handleOnChange && handleOnChange( _value );
     };
-    return (<input 
-    type={props.type || "text"}
+    return (<input
+    type={ type || "text"}
     autoComplete="new-password"
-    placeholder={props.placeholder}
-    style={props.style}
+    autoFocus={ autoFocus }
+    placeholder={placeholder}
+    style={style}
+    className={className}
     value={ value } 
     onChange={ onChangeHanlder }
-    {...props}
     />);
 };
 export default Input;
