@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrlShortenerForm should render snapshot 1`] = `
+<form
+  className="text-center"
+  name="urlShortenerForm"
+  onSubmit={[Function]}
+  style={
+    Object {
+      "width": "23rem",
+    }
+  }
+>
+  <input
+    autoComplete="new-password"
+    autoFocus={true}
+    className="vertical-space--2 text--truncated invalid"
+    name="urlShortenerInput"
+    onChange={[Function]}
+    pattern="https?://.*"
+    placeholder="e.g. https://www.google.com/search?q=url+shortener&oq=google+u&aqs=chrome.0.69i59j69i60l3j0j69i57.1069j0j7&sourceid=chrome&ie=UTF-8"
+    required={true}
+    type="url"
+    value=""
+  />
+  <button
+    className="button"
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Clear
+    </span>
+  </button>
+  <button
+    className="button primary stord margin-left--2"
+    disabled={true}
+    type="submit"
+  >
+    <span>
+      Shorten it
+    </span>
+  </button>
+</form>
+`;

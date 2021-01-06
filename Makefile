@@ -23,4 +23,4 @@ server:
 # `make test` will be used after `make setup` in order to run
 # your test suite.
 test:
-	npm run test
+	npm run test:watch

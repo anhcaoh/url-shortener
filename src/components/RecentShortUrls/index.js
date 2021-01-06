@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { H3, Block, Text, List } from "Components/Typography";
 import Link from "Components/Link";
 import Button from "Components/Button";
-import "./urlMaps.scss";
-const UrlMaps = ( {urlMaps, reset} ) => {
+import "./recentShortUrls.scss";
+const RecentShortUrls = ( {urlMaps, setStateUrlMaps} ) => {
     const [ isHiddenMenu, toggleHiddenMenu ] = useState( true );
     return (<>
         {(urlMaps && urlMaps.length &&
@@ -15,7 +15,7 @@ const UrlMaps = ( {urlMaps, reset} ) => {
                 title={url.originalUrl}>{url.shortUrl}</Link></li>
                 ))}</List>
                 <Button id="clear-all-recent" 
-                onClick={reset}>
+                onClick={(e) => setStateUrlMaps({"urlMaps":[]})}>
                 <Text>Clear All</Text></Button>
                 <Button id="close-all-recent" 
                 onClick={(e) => toggleHiddenMenu(!isHiddenMenu)}>
@@ -27,4 +27,4 @@ const UrlMaps = ( {urlMaps, reset} ) => {
             </>)) || null
     }</>);
 };
-export default UrlMaps;
+export default RecentShortUrls;

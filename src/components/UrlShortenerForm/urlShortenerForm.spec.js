@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import UrlMaps from "./index";
+import UrlShortenerForm from "./index";
  
-describe("UrlMaps", () => {
+describe("UrlShortenerForm", () => {
     it("should render snapshot", () => {
-            const component = renderer.create(<UrlMaps />);
+            const component = renderer.create(<UrlShortenerForm />);
             let tree = component.toJSON();
             expect(tree).toMatchSnapshot(); 
     });
