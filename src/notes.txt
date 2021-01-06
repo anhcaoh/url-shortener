@@ -1,0 +1,26 @@
+Assumptions:
+Local machine installed Node and NPM
+Local network allowed AWS network calls
+
+How to setup and startup:
+Run 'make setup' to npm install dependencies
+Run 'make web' to initialize UI web client serving at localhost:8080
+Run 'make server' to start REST service (in another CMD/Terminal tab) running at localhost:9000
+
+Testing:
+Using Jest and Enzyme
+Run 'make test' to excute test cases via jest
+
+Security & Database:
+Using Amazon DynamoDB to leverge key-value pair datastore and 
+to take advantage of fully-managed database for security measure and performance
+Using browser Local Storage for client side caching (i.e. persist:url-shortener)
+
+Seed data: Can navigate directly to localhost:8080{paths} below
+/372dff4
+/026aebf
+/24060af
+/3dce2b0
+/782fddc
+/7ad71a4
+/d6a4789

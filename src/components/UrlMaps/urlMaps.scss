@@ -1,0 +1,32 @@
+#recent-short-urls { 
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fbfbfbe5;
+    padding: 0.5rem;
+    height: calc(100% - 1rem);
+    border-left: 1px solid #efefef;
+    transition: right 0.25s ease-in;
+    &.hidden{
+        right: -100%;
+        transition: right 0.25s ease-in;
+    }
+}
+#close-all-recent{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+#open-all-recent{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#recent-short-urls-list {
+    padding-left: 0.444rem;
+    color: #e1e1e1;
+    li { 
+        margin-bottom: 0.5rem;
+    }
+}

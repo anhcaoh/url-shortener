@@ -6,10 +6,11 @@ const setStateShortUrl = ( shortUrl ) => {
     shortUrl: shortUrl 
   };
 };
-const setStateUrlMaps = ( shortUrl ) => {
+const setStateUrlMaps = ( { shortUrl, urlMaps } ) => {
   return { 
     type: SET_URL_MAPS, 
-    shortUrl: shortUrl 
+    shortUrl: shortUrl,
+    urlMaps: urlMaps
   };
 };
 const reset = () => {

@@ -1,7 +1,9 @@
+import { compose } from "redux";
 import { connect } from "react-redux";
 import { setStateShortUrl, setStateUrlMaps, reset } from "./actions";
-const Connected = ( props ) => {
-  return props.render && props.render(props);
+
+const Connected = (props) => {
+  return props.render(props);
 };
 const mapStateToProps = (state) => {
   return {
@@ -10,7 +12,7 @@ const mapStateToProps = (state) => {
   };
 };
 const mapDispatchToProps = { setStateShortUrl, setStateUrlMaps, reset };
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Connected);
+const enhance = compose(
+  connect(mapStateToProps,
+  mapDispatchToProps));
+export default enhance(Connected);

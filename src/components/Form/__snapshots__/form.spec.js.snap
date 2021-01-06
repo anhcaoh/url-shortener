@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form should render snapshot 1`] = `
-<form
-  onSubmit={[Function]}
->
+<form>
   Children within Form
 </form>
 `;

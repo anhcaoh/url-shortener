@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { H1, H2, Paragraph, Block, Text, Label } from "./index";
+import { H1, H2, Paragraph, Block, Text, Label, List } from "./index";
  
 describe("Typography", () => {
     it("should render snapshot", () => {
@@ -11,6 +11,7 @@ describe("Typography", () => {
                 <Block>Block Division</Block>
                 <Text>Text Span</Text>
                 <Label>Label</Label>
+                <List>{[1,2,3].map((item) =>(<li key={item}>{item}</li>))}</List>
                 </>);
             let tree = component.toJSON();
             expect(tree).toMatchSnapshot(); 
